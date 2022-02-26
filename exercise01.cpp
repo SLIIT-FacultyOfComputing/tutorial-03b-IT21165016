@@ -1,12 +1,26 @@
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 int main() {
  float marks[] = {78.4, 90.6, 45.9, 72.2, 54.4};
  char names[][20] = {"Ajith", "Wimal", "Kanthi", "Suranji", "Kushmitha"};
- cout << "No" << "Name" << "Marks" << endl;
+ cout << "No"<< "Name"<< "Marks";
  for (int r = 0; r < 5; r++) {
      cout <<  r+1 
           <<  names[r]
           << marks[r] << endl;
  }
+}*/
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+  float marks[]={78.4,90.6,45.9,72.2,54.4};
+  char names[][20]=     {"Ajith","Wimal","Kanthi","Suranji","Kushmitha"};
+  cout<<"No"<<"\t"<<"Name"<<"\t"<<"\t"<<"Marks"<<endl;
+  for(int i=0;i<5;i++){
+      cout<<i+1<<"\t"<<names[i]<<"\t"<<"\t"<<marks[i]<<setiosflags(ios::fixed)<<setprecision(2)<<endl;
+    }
+return 0;
+  
 }
